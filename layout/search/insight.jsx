@@ -71,7 +71,7 @@ class Insight extends Component {
  *     }} />
  */
 Insight.Cacheable = cacheComponent(Insight, 'search.insight', (props) => {
-  const { helper } = props;
+  const { search, helper } = props;
 
   return {
     translation: {
@@ -82,7 +82,7 @@ Insight.Cacheable = cacheComponent(Insight, 'search.insight', (props) => {
       categories: helper._p('common.category', Infinity),
       tags: helper._p('common.tag', Infinity),
     },
-    contentUrl: helper.url_for('/content.json'),
+    contentUrl: helper.url_for(search.json || '/content.json'),
     jsUrl: helper.url_for('/js/insight.js'),
   };
 });
