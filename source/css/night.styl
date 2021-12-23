@@ -58,8 +58,6 @@ night()
         &:focus
             color: #ffffff
             background-color: dark-primary-color
-        &.is-active
-            color: #3273dc
     .navbar,
     .card
         background-color: rgba(40,44,52,0.5)
@@ -82,7 +80,10 @@ night()
         border-color: dark-primary-color
 
     // button
-    .button.is-primary, .button.is-light, .button.is-small
+    .button.is-primary,
+    .button.is-light,
+    .button.is-small,
+    .cc-window .cc-compliance > .cc-btn
         background-color: dark-primary-color
         color: dark-font-color
         &:hover, &.is-hovered
@@ -166,7 +167,8 @@ night()
         color: dark-font-color
     .media-content,
     .has-text-grey,
-    .link-muted
+    .link-muted,
+    .cc-window
         color: dark-font-color !important
     a
         color: rgb(82, 153, 224)
@@ -254,6 +256,11 @@ night()
     input:-webkit-autofill
         -webkit-text-fill-color: dark-font-color !important
         box-shadow: 0 0 0px 1000px dark-primary-color inset
+
+    // cookie window
+    .cc-window
+        background-color: rgba(40,44,52,0.5) !important
+        backdrop-filter: blur(10px)
 
     // twikoo
     .twikoo
