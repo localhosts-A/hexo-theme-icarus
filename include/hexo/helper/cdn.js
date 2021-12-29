@@ -7,22 +7,28 @@
 /**
  * @private
  */
-const PROVIDERS = {
+ const PROVIDERS = {
   LIBRARY: {
     cdnjs: '[cdnjs]https://cdnjs.cloudflare.com/ajax/libs/${ package }/${ version }/${ filename }',
     loli: '[cdnjs]https://cdnjs.loli.net/ajax/libs/${ package }/${ version }/${ filename }',
     jsdelivr: 'https://cdn.jsdelivr.net/npm/${ package }@${ version }/${ filename }',
     unpkg: 'https://unpkg.com/${ package }@${ version }/${ filename }',
+    bootcdn: '[cdnjs]https://cdn.bootcdn.net/ajax/libs/${ package }/${ version }/${ filename }',
+    '75cdn': '[cdnjs]https://lib.baomitu.com/${ package }/${ version }/${ filename }',
   },
   FONT: {
     host: '/css/font/font.css',
     google: 'https://fonts.googleapis.com/${ type }?family=${ fontname }',
     loli: 'https://fonts.loli.net/${ type }?family=${ fontname }',
+    fontim: 'https://fonts.font.im/${ type }?family=${ fontname }',
+    ustc: 'https://fonts.lug.ustc.edu.cn/${ type }?family=${ fontname }',
   },
   ICON: {
     host: '/css/font/fontawesome/css/all.min.css',
-    loli: 'https://cdnjs.loli.net/ajax/libs/font-awesome/5.12.0/css/all.min.css',
-    fontawesome: 'https://use.fontawesome.com/releases/v5.12.0/css/all.css',
+    loli: 'https://cdnjs.loli.net/ajax/libs/font-awesome/5.15.2/css/all.min.css',
+    fontawesome: 'https://use.fontawesome.com/releases/v5.15.2/css/all.css',
+    bootcdn: 'https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.3/css/all.min.css',
+    '75cdn': 'https://lib.baomitu.com/font-awesome/5.12.1/css/all.min.css',
   },
 };
 
@@ -57,6 +63,13 @@ const CDNJS_FIXTURES = {
   clipboard: (ver, fname) => ['clipboard.js', ver, fname],
   // disqusjs is not hosted on CDN.js
   disqusjs: (ver, fname) => [],
+  cookieconsent: (ver, fname) => [
+    'cookieconsent',
+    ver,
+    fname.startsWith('build/') ? fname.substr(6) : fname,
+  ],
+  // waline is not hosted on CDN.js
+  '@waline/client': (ver, fname) => [],
 };
 
 const UNPKG_FIXTURES = {
@@ -88,7 +101,7 @@ const UNPKG_FIXTURES = {
  *
  * // Use the function below to insert FontAwesome icon font CSS URL.
  * iconcdn();
- * // -> https://use.fontawesome.com/releases/v5.12.0/css/all.css
+ * // -> https://use.fontawesome.com/releases/v5.15.2/css/all.css
  */
 module.exports = function (hexo) {
   function applyFixture(fixture, _package, version, filename) {
