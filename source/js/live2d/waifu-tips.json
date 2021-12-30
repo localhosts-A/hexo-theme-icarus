@@ -30,8 +30,8 @@
             "zhangshuqiao.org": ["米米的博客"]
         },
         "model_message": {
-            "1": ["来自 Potion Maker 的 Pio 酱 ~"],
-            "2": ["来自 Potion Maker 的 Tia 酱 ~"]
+            "1": ["来自 Bilibili Live 的 22 哦 ~"],
+            "2": ["来自 Bilibili Live 的 33 的说"]
         },
         "hitokoto_api_message": {
             "lwl12.com": ["这句一言来自 <span style=\"color:#4382d6;\">『{source}』</span>", "，是 <span style=\"color:#4382d6;\">{creator}</span> 投稿的", "。"],
