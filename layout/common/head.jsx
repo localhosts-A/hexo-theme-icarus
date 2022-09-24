@@ -125,8 +125,6 @@ module.exports = class extends Component {
 
             <title>{getPageTitle(page, config.title, helper)}</title>
 
-            <script src="/freecdn-loader.min.js"></script>
-
             <WebApp.Cacheable
                 helper={helper}
                 favicon={favicon}
