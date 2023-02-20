@@ -13,6 +13,7 @@ class Footer extends Component {
             author,
             links,
             icp,
+            copyright,
             showVisitorCounter,
             visitorCounterTitle
         } = this.props;
@@ -44,12 +45,13 @@ class Footer extends Component {
                             <a href="https://github.com/imaegoo/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a>
                             {showVisitorCounter ? <br /> : null}
                             {icp ? [
-                                <a href="https://beian.miit.gov.cn" target="_blank">{icp}</a>,
+                                <a href="https://beian.miit.gov.cn" target="_blank" rel="noreferrer noopener">{icp}</a>,
                                 <span>&nbsp;-&nbsp;</span>
                             ] : null}
                             {showVisitorCounter ? <span id="busuanzi_container_site_uv"
                                 dangerouslySetInnerHTML={{ __html: visitorCounterTitle }}></span> : null}
                         </p>
+                        {copyright ? <p class="is-size-7" dangerouslySetInnerHTML={{ __html: copyright }}></p> : null}
                     </div>
                     <div class="level-end">
                         {Object.keys(links).length ? <div class="field has-addons">
@@ -74,8 +76,8 @@ module.exports = cacheComponent(Footer, 'common.footer', props => {
     const { url_for, _p, date } = helper;
     const { logo, title, author, footer, plugins } = config;
 
-    const logoLight = logo instanceof String ? logo : logo.light
-    const logoDark = logo instanceof String ? logo : logo.dark
+    const logoLight = logo instanceof String ? logo : logo.light;
+    const logoDark = logo instanceof String ? logo : logo.dark;
 
     const links = {};
     if (footer && footer.links) {
@@ -100,6 +102,7 @@ module.exports = cacheComponent(Footer, 'common.footer', props => {
         author,
         links,
         icp,
+        copyright: footer?.copyright ?? '',
         showVisitorCounter: plugins && plugins.busuanzi === true,
         visitorCounterTitle: _p('plugin.visitor_count', '<span id="busuanzi_value_site_uv">0</span>')
     };
