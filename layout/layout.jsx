@@ -48,6 +48,8 @@ module.exports = class extends Component {
                 <script type="text/javascript" src="/js/imaegoo/imaegoo.js"></script>
                 <script type="text/javascript" src="/js/imaegoo/universe.js"></script>
                 {/* <script type="text/javascript" src="/js/live2d/autoload.js"></script> */}
+                {config.plugins.netlify ? <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script> : null}
+                {config.plugins.netlify ? <script src="/js/imaegoo/netlify.js"></script> : null}
             </body>
         </html>;
     }
