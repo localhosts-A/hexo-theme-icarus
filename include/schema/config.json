@@ -20,15 +20,23 @@
         },
         "logo": {
             "type": [
-                "string",
                 "object"
             ],
             "description": "Path or URL to the website's logo",
-            "default": "/img/logo.svg",
             "properties": {
                 "text": {
                     "type": "string",
                     "description": "Text to be shown in place of the logo image"
+                },
+                "light": {
+                    "type": "string",
+                    "description": "Path or URL to the website's logo in light mode",
+                    "default": "/img/logo.svg"
+                },
+                "dark": {
+                    "type": "string",
+                    "description": "Path or URL to the website's logo in dark mode",
+                    "default": "/img/logo.svg"
                 }
             }
         },
