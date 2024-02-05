@@ -8,16 +8,11 @@
 
 ## 🔷 用法 Usage
 
-本主题还未兼容 hexo v7.0.0，可以先暂时使用 hexo v6.3.0
-
 ```sh
-npm i -g hexo@6
+npm i -g hexo
 mkdir blog
 cd blog
 hexo init --no-clone
 git clone https://github.com/imaegoo/hexo-theme-icarus.git themes/icarus
 hexo config theme icarus
-npm i bulma-stylus@0.8.0 hexo-component-inferno@^2.0.2 hexo-pagination@^2.0.0 hexo-renderer-inferno@^0.1.3 inferno@^7.3.3 inferno-create-element@^7.3.3
-hexo g # 第一遍运行会因为没有配置文件而报错，并自动生成配置文件
-hexo g # 第二遍运行不会报错
 ```
