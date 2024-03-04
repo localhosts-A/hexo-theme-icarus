@@ -35,9 +35,15 @@
                 }
             ]
         },
+        "mps": {
+            "type": "string",
+            "description": "网安备案号",
+            "default": "",
+            "nullable": true
+        },
         "icp": {
             "type": "string",
-            "description": "备案号",
+            "description": "ICP备案号",
             "default": "",
             "nullable": true
         }
