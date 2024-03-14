@@ -8,10 +8,10 @@
       "type": "string",
       "const": "twikoo_new"
     },
-    "envId": {
+    "env_id": {
       "type": "string",
-      "description": "envId from Tencent CloudBase"
+      "description": "envId from Tencent CloudBase or Vercel URL"
     }
   },
-  "required": ["type", "envId"]
+  "required": ["type", "env_id"]
 }

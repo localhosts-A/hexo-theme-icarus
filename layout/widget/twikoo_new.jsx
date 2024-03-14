@@ -21,10 +21,9 @@ class TwikooNew extends Component {
 
 TwikooNew.Cacheable = cacheComponent(TwikooNew, 'widget.twikoonew', (props) => {
   const { widget } = props;
-  const { envId } = widget;
 
   return {
-    envId: envId,
+    envId: widget.env_id,
   };
 });
 
