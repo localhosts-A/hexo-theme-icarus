@@ -58,9 +58,6 @@
         "comment": {
             "$ref": "/common/comment.json"
         },
-        "share": {
-            "$ref": "/common/share.json"
-        },
         "sidebar": {
             "$ref": "/common/sidebar.json"
         },

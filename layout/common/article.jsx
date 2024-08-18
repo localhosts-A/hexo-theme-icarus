@@ -1,7 +1,6 @@
 const moment = require('moment');
 const { Component, Fragment } = require('inferno');
 const { toMomentLocale } = require('hexo/dist/plugins/helper/date');
-const Share = require('./share');
 const Comment = require('./comment');
 const ArticleLicensing = require('hexo-component-inferno/lib/view/misc/article_licensing');
 
@@ -101,8 +100,6 @@ module.exports = class extends Component {
                     </div> : null}
                     {/* "Read more" button */}
                     {index && page.excerpt ? <a class="article-more button is-small is-size-7" href={`${url_for(page.link || page.path)}#more`}>{__('article.more')}</a> : null}
-                    {/* Share button */}
-                    {!index ? <Share config={config} page={page} helper={helper} /> : null}
                 </article>
             </div>
             {/* Post navigation */}
