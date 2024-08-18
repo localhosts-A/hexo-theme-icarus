@@ -62,20 +62,11 @@ const CDNJS_FIXTURES = {
   katex: (ver, fname) => ['KaTeX', ver, fname],
   'pace-js': (ver, fname) => ['pace', ver, fname],
   clipboard: (ver, fname) => ['clipboard.js', ver, fname],
-  // disqusjs is not hosted on CDN.js
-  disqusjs: (ver, fname) => [],
-  // waline is not hosted on CDN.js
-  '@waline/client': (ver, fname) => [],
 };
 
 const UNPKG_FIXTURES = {
   mathjax: (ver, fname) => [
     'mathjax',
-    ver,
-    fname.indexOf('.min.') > -1 ? fname.replace(/\.min\./gi, '.') : fname,
-  ],
-  disqusjs: (ver, fname) => [
-    'disqusjs',
     ver,
     fname.indexOf('.min.') > -1 ? fname.replace(/\.min\./gi, '.') : fname,
   ],

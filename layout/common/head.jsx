@@ -126,13 +126,7 @@ module.exports = class extends Component {
                 url={open_graph.url || page.permalink || url}
                 images={openGraphImages}
                 siteName={open_graph.site_name || config.title}
-                language={language}
-                twitterId={open_graph.twitter_id}
-                twitterCard={open_graph.twitter_card}
-                twitterSite={open_graph.twitter_site}
-                googlePlus={open_graph.google_plus}
-                facebookAdmins={open_graph.fb_admins}
-                facebookAppId={open_graph.fb_app_id} /> : null}
+                language={language} /> : null}
 
             {typeof structured_data === 'object' && structured_data !== null ? <StructuredData
                 title={structured_data.title || page.title || config.title}

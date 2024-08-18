@@ -40,15 +40,6 @@ module.exports = class extends Migration {
             }
         }
 
-        if (result.comment && Object.prototype.hasOwnProperty.call(result.comment, 'type')) {
-            switch (result.comment.type) {
-                case 'changyan':
-                    result.comment.app_id = config.comment.appid;
-                    delete result.comment.appid;
-                    break;
-            }
-        }
-
         if (Array.isArray(result.widgets) && result.widgets.length) {
             for (const widget of result.widgets) {
                 if (Object.prototype.hasOwnProperty.call(widget, 'type')) {
