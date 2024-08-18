@@ -47,9 +47,6 @@
 .waifu-tool span:hover {
     color: #eee;
 }
-.waifu #live2d{
-    position: relative;
-}
 @keyframes shake {
     2% {
         transform: translate(0.5px, -1.5px) rotate(-0.5deg);
