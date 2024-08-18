@@ -39,9 +39,6 @@
             },
             {
                 "$ref": "/widget/twikoo_new.json"
-            },
-            {
-                "$ref": "/widget/adsense.json"
             }
         ],
         "required": [
