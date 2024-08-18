@@ -1,23 +1,19 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "/common/footer.json",
-    "description": "Page footer configurations",
+    "description": "页脚配置",
     "type": "object",
     "properties": {
         "copyright": {
-            "description": "Copyright text",
+            "description": "版权说明",
             "type": "string",
             "examples": [
-                "© 2019",
-                "© 2019 - 2020",
-                "© 2019 - 2020, Company Name",
-                "© 2019 - 2020, Company Name. All rights reserved.",
-                "粤ICP备12345678号"
+                "© 2019 - 2020"
             ]
         },
         "links": {
             "$ref": "/misc/poly_links.json",
-            "description": "Links to be shown on the right of the footer section",
+            "description": "在页脚右侧部分显示链接",
             "examples": [
                 {
                     "Creative Commons": {

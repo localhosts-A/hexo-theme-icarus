@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "/common/comment.json",
-    "description": "Comment plugin configurations\nhttps://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment/",
+    "description": "评论插件配置\nhttps://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment/",
     "type": "object",
     "oneOf": [
         {

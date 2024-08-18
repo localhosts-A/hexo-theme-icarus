@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "/widget/twikoo_new.json",
-  "description": "Twikoo new comment widget configurations",
+  "description": "Twikoo 最新评论部件配置",
   "type": "object",
   "properties": {
     "type": {
@@ -10,7 +10,7 @@
     },
     "env_id": {
       "type": "string",
-      "description": "envId from Tencent CloudBase or Vercel URL"
+      "description": "来自腾讯云数据库或 Vercel URL 的 envId"
     }
   },
   "required": ["type", "env_id"]

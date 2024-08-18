@@ -65,10 +65,6 @@ module.exports = class extends Migration {
         if (result.plugins && typeof result.plugins === 'object') {
             for (const name in result.plugins) {
                 switch (name) {
-                    case 'outdated-browser':
-                        result.plugins.outdated_browser = result.plugins[name];
-                        delete result.plugins[name];
-                        break;
                     case 'back-to-top':
                         result.plugins.back_to_top = result.plugins[name];
                         delete result.plugins[name];

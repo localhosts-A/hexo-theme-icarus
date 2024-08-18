@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "/common/plugins.json",
-    "description": "Plugin configurations\nhttps://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/",
+    "description": "插件配置\nhttps://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/",
     "type": "object",
     "properties": {
         "animejs": {
@@ -22,17 +22,11 @@
         "busuanzi": {
             "$ref": "/plugin/busuanzi.json"
         },
-        "cnzz": {
-            "$ref": "/plugin/cnzz.json"
-        },
         "gallery": {
             "$ref": "/plugin/gallery.json"
         },
         "google_analytics": {
             "$ref": "/plugin/google_analytics.json"
-        },
-        "hotjar": {
-            "$ref": "/plugin/hotjar.json"
         },
         "katex": {
             "$ref": "/plugin/katex.json"
@@ -40,20 +34,11 @@
         "mathjax": {
             "$ref": "/plugin/mathjax.json"
         },
-        "outdated_browser": {
-            "$ref": "/plugin/outdated_browser.json"
-        },
         "pjax": {
             "$ref": "/plugin/pjax.json"
         },
         "progressbar": {
             "$ref": "/plugin/progressbar.json"
-        },
-        "statcounter": {
-            "$ref": "/plugin/statcounter.json"
-        },
-        "twitter_conversion_tracking": {
-            "$ref": "/plugin/twitter_conversion_tracking.json"
         }
     }
 }

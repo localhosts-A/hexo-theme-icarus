@@ -1,24 +1,24 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "/common/providers.json",
-    "description": "CDN provider settings\nhttps://ppoffice.github.io/hexo-theme-icarus/Configuration/Theme/speed-up-your-site-with-custom-cdn/",
+    "description": "CDN 服务设置\nhttps://ppoffice.github.io/hexo-theme-icarus/Configuration/Theme/speed-up-your-site-with-custom-cdn/",
     "type": "object",
     "properties": {
         "cdn": {
             "type": "string",
-            "description": "Name or URL template of the JavaScript and/or stylesheet CDN provider",
+            "description": "JavaScript 和 CSS CDN 提供商的名称或 URL 模板",
             "default": "jsdelivr",
             "nullable": true
         },
         "fontcdn": {
             "type": "string",
-            "description": "Name or URL template of the webfont CDN provider",
+            "description": "网络字体 CDN 提供商的名称或 URL 模板",
             "default": "google",
             "nullable": true
         },
         "iconcdn": {
             "type": "string",
-            "description": "Name or URL of the fontawesome icon font CDN provider",
+            "description": "fontawesome 图标字体 CDN 提供商的名称或 URL",
             "default": "fontawesome",
             "nullable": true
         }

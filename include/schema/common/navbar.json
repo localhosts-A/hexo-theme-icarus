@@ -1,35 +1,35 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "/common/navbar.json",
-    "description": "Page top navigation bar configurations",
+    "description": "页面顶部导航栏配置",
     "type": "object",
     "properties": {
         "menu": {
             "type": "object",
-            "description": "Navigation menu items",
+            "description": "导航菜单项目",
             "patternProperties": {
                 ".+": {
                     "type": "string",
-                    "description": "URL or path of the menu link"
+                    "description": "菜单链接的 URL 或路径"
                 }
             },
             "examples": [
                 {
-                    "Home": "/",
-                    "Archives": "/archives",
-                    "Categories": "/categories",
-                    "Tags": "/tags",
-                    "About": "/about"
+                    "首页": "/",
+                    "分类": "/archives",
+                    "归档": "/categories",
+                    "标签": "/tags",
+                    "关于": "/about"
                 }
             ],
             "nullable": true
         },
         "links": {
             "$ref": "/misc/poly_links.json",
-            "description": "Links to be shown on the right of the navigation bar",
+            "description": "在导航栏右侧显示链接",
             "examples": [
                 {
-                    "Download on GitHub": {
+                    "在 GitHub 上下载": {
                         "icon": "fab fa-github",
                         "url": "https://github.com/ppoffice/hexo-theme-icarus"
                     }

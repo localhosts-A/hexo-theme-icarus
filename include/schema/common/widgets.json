@@ -1,14 +1,14 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "/common/widgets.json",
-    "description": "Sidebar widget configurations\nhttp://ppoffice.github.io/hexo-theme-icarus/categories/Widgets/",
+    "description": "侧栏小部件配置\nhttp://ppoffice.github.io/hexo-theme-icarus/categories/Widgets/",
     "type": "array",
     "items": {
         "type": "object",
         "properties": {
             "position": {
                 "type": "string",
-                "description": "Where should the widget be placed, left sidebar or right sidebar",
+                "description": "小部件应放在哪里，左侧边栏还是右侧边栏？",
                 "default": "left"
             }
         },

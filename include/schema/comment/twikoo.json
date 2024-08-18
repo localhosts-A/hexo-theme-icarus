@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "/comment/twikoo.json",
-  "description": "Twikoo comment plugin configurations",
+  "description": "Twikoo 评论插件配置",
   "type": "object",
   "properties": {
     "type": {
@@ -10,16 +10,16 @@
     },
     "env_id": {
       "type": "string",
-      "description": "envId from Tencent CloudBase or Vercel URL"
+      "description": "来自腾讯云数据库或 Vercel URL 的 envId"
     },
     "region": {
       "type": "string",
-      "description": "Region of Tencent CloudBase",
+      "description": "腾讯云服务所在区域",
       "nullable": true
     },
     "lang": {
       "type": "string",
-      "description": "i18n support",
+      "description": "i18n 支持",
       "default": "zh-CN",
       "nullable": true
     },

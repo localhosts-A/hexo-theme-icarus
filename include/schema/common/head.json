@@ -1,12 +1,12 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "/common/head.json",
-    "description": "Page metadata configurations",
+    "description": "页面数据配置",
     "type": "object",
     "properties": {
         "favicon": {
             "type": "string",
-            "description": "URL or path to the website's icon",
+            "description": "网站图标的 URL 或路径",
             "default": "/img/favicon.svg",
             "nullable": true
         },
@@ -24,7 +24,7 @@
         },
         "rss": {
             "type": "string",
-            "description": "URL or path to the website's RSS atom.xml",
+            "description": "网站 RSS atom.xml 的 URL 或路径",
             "nullable": true
         }
     }
