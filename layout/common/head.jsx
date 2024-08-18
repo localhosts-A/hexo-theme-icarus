@@ -109,14 +109,6 @@ module.exports = class extends Component {
             structuredImages = page.photos;
         }
 
-        let followItVerificationCode = null;
-        if (Array.isArray(config.widgets)) {
-            const widget = config.widgets.find(widget => widget.type === 'followit');
-            if (widget) {
-                followItVerificationCode = widget.verification_code;
-            }
-        }
-
         return <head>
             <meta charset="utf-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -172,8 +164,6 @@ module.exports = class extends Component {
 
             {adsenseClientId ? <script data-ad-client={adsenseClientId}
                 src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" async></script> : null}
-
-            {followItVerificationCode ? <meta name="follow.it-verification-code" content={followItVerificationCode} /> : null}
         </head>;
     }
 };
