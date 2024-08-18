@@ -35,9 +35,6 @@
                 "$ref": "/widget/tags.json"
             },
             {
-                "$ref": "/widget/subscribe_email.json"
-            },
-            {
                 "$ref": "/widget/twikoo_new.json"
             }
         ],

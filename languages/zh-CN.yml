@@ -21,8 +21,6 @@ widget:
     recents: '最新文章'
     links: '链接'
     catalogue: '目录'
-    subscribe_email: '订阅更新'
-    subscribe: '订阅'
 article:
     created_at: '%s发表'
     updated_at: '%s更新'
