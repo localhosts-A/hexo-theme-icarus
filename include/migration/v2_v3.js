@@ -49,11 +49,6 @@ module.exports = class extends Migration {
             }
         }
 
-        if (Array.isArray(result.donate) && result.donate.length) {
-            result.donates = result.donate;
-            delete result.donate;
-        }
-
         if (Array.isArray(result.widgets) && result.widgets.length) {
             for (const widget of result.widgets) {
                 if (Object.prototype.hasOwnProperty.call(widget, 'type')) {
